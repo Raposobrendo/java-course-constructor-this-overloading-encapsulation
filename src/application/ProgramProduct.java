@@ -24,10 +24,18 @@ public class ProgramProduct{
         quantity = sc.nextInt();
         product.addProducts(quantity);
         System.out.println("Updated data: " + product);
+
         System.out.print("Enter the number of products to be removed in stock: ");
         quantity = sc.nextInt();
         product.removeProducts(quantity);
         System.out.println("Updated data: " + product);
+
+        System.out.print("Change the product name: ");
+        sc.nextLine();
+        name = sc.nextLine();
+        product.setName(name);
+        System.out.println("New product name: " + product.getName());
+
 
 
         sc.close();
